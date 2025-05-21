@@ -105,5 +105,26 @@
             </div>
         </div>
      </div>
+      <script>    
+        const quantityText=document.getElementById('quan-text');
+        function minus(){
+            let quantity = parseInt(quantityText.innerText);
+            if(quantity>1){
+                quantityText.innerText =--quantity;
+            }
+            else{
+                alert("select at list 1 item");
+            }   
+        }
+        function add(){
+            let quantity = parseInt(quantityText.innerText);
+            if(quantity<5){
+                quantityText.innerText =++quantity;
+            }
+            else{
+                alert("Only 5 units of this item can be add per order");
+            }  
+        }
+    </script>
 </body>
 </html>
